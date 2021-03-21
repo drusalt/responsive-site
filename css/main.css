@@ -103,11 +103,13 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 /*** Navigation ***/
 
 header nav {
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -116,13 +118,20 @@ header nav {
 
 
 header nav ul {
+  width: 45%;
+  margin: 22px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
+.header-divider {
+  width: 100%;
+}
 
-
+header {
+  padding: 15px 0;
+}
 
 /** Main area **/
 
@@ -132,6 +141,9 @@ header nav ul {
   align-items: center;
 }
 
+.hero-area h1 {
+  padding: 54px 0 334px 0;
+}
 
 
 aside {
@@ -141,12 +153,39 @@ aside {
   flex-flow: row wrap;
 }
 
+aside .form-description h3 {
+  padding: 30px 0 15px 0;
+}
 
+aside p {
+  padding-bottom: 40px;
+}
+
+aside .form h3 {
+  padding-bottom: 20px;
+}
+
+aside .form {
+  padding-bottom: 53px;
+}
 
 .features  {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.features p {
+  margin: 0;
+}
+
+.features h2 {
+  padding-top: 52px;
+
+}
+
+.feature article {
+  width: 54%;
 }
 
 .features .features-items {
@@ -156,13 +195,29 @@ aside {
   flex-flow: row wrap;
 }
 
+.features article {
+  width: 55%;
+}
+
+
 .reviews {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.reviews h2 {
+  padding: 53px 0 33px 0;
+}
 
+.reviews h3 {
+  width: 89%;
+  padding: 21px 0 26px 0;
+}
+
+.reviews p {
+  padding-bottom: 47px;
+}
 
 /*** Footer ***/
 
@@ -173,6 +228,18 @@ footer .social-icons {
    align-items: center;
 }
 
+footer .contact-section h3 {
+  padding: 51px 0 24px 0;
+}
+
+footer .contact section p {
+  padding-bottom: 45px;
+}
+
+footer p {
+  margin: 0;
+}
+
 footer .social p {
   display: flex;
   justify-content: center;
@@ -180,7 +247,10 @@ footer .social p {
 
 }
 
-
+footer .content wrapper {
+  width: 55%;
+  margin:  50px 0;
+}
 
 /* ============================================
           FAQ
