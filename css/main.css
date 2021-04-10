@@ -102,6 +102,7 @@ header, footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+
 }
 
 header .content-wrapper {
@@ -120,6 +121,7 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+
 }
 
 
@@ -127,6 +129,7 @@ header nav ul {
   width: 100%;
   display: flex;
   justify-content: space-around;
+
 
 }
 
@@ -138,6 +141,7 @@ header nav ul {
 
 header {
   padding: 15px 0;
+
 }
 
 footer {
@@ -166,6 +170,7 @@ footer p {
 }
 
 
+
 footer .content-wrapper {
   width: 55%;
   margin:  50px 0;
@@ -175,6 +180,9 @@ footer .copyright {
   margin: 20px 0;
 }
 
+.social h3 {
+  margin:  0 0 45px 0;
+}
 
 
 
@@ -196,6 +204,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+
+
 }
 
 
@@ -213,12 +223,13 @@ aside {
 }
 
 .features h2 {
-  padding-top: 52px;
-
+  margin-bottom: 60px;
+   
 }
 
-.feature article {
+.features article {
   width: 63%;
+  margin: 30px 0;
 }
 
 .features .features-items {
@@ -228,9 +239,7 @@ aside {
   flex-flow: row wrap;
 }
 
-.features article {
-  width: 55%;
-}
+
 
 /* Reviews */
 
@@ -243,6 +252,7 @@ aside {
 
 .reviews h2 {
   padding: 53px 0 33px 0;
+
 }
 
 .reviews h3 {
@@ -259,7 +269,7 @@ aside {
 
 
 /* ============================================
-          FAQ
+          FAQ Page
 ==============================================*/
 
 .faq {
@@ -279,15 +289,15 @@ aside {
 
 }
 .faq h2 {
-  padding-top: 50px;
+  margin-bottom: 40px;
 }
 
-.faq-conetnt {
+.faq-content {
   margin-bottom: 50px;
 }
 
 /* ============================================
-          About
+          About Page
 ==============================================*/
 
 
@@ -412,7 +422,11 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width:  768px) {
+  
+
+
+
+  @media only screen and (min-width:768px) {
     /* Tablet styles here */
 
 
@@ -422,24 +436,22 @@ aside {
       margin: 100px 0;
     }
 
-    /* Heeader */
+    /* Header */
 
 
     header {
       justify-content: space-around;
-
-
-      
+      padding: 33px 0;
     }
 
     header .content-wrapper {
       width: 100%;
-      padding: 33px 0;
+      justify-content: space-between;
 
     }
 
     header nav {
-      width: 17%;
+      width: 20%;
     }
 
     header nav ul {
@@ -491,6 +503,8 @@ aside {
       flex-basis: 50%;
     }
 
+
+
     .features .features-item-description {
       width: 50%;
 
@@ -516,7 +530,10 @@ aside {
     }
   
     footer .copyright {
+      display: flex;
       width: 100%;
+      justify-content: center;
+      align-items: center;
     }
 
     
@@ -549,19 +566,33 @@ aside {
     /* ==========================================================================
      FAQ Page
      ========================================================================== */
-  
+    
+
+    header {
+      padding:  15px 0;
+    }
+
     .faq .content-wrapper {
+      
       justify-content: space-between;
+  
     }
   
-    .faq-content {
+
+    .faq-content  {
+
       flex-basis: 45%;
+
     }
-  
+
+    
     .faq h2 {
       width: 100%;
+
+
     }
-}
+  }  
+
 
     
 
@@ -569,6 +600,100 @@ aside {
 
 @media only screen and (min-width: 1200px) {
     /* Desktop styles here */
+
+    /*** general Styles ***/
+
+    .content-wrapper{
+      max-width: 960px;
+    }
+
+    /*Hero Area*/
+
+    .hero-area h1 {
+      width: 69%;
+    }
+
+    /** Aside **/
+
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
+    
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 33%;
+      padding: 45px 0;
+    }
+
+    /*** features ***/
+
+    .features h2 {
+      font-size: 36px;
+      width: 80%;
+    }
+
+    .features .features-items {
+      justify-content: space-around;
+      width: 85%;
+     
+    }
+
+    .features article {
+      flex-basis: 30%;
+    }
+
+
+
+    footer {
+      width: 90%;
+    
+    {
+    
+
+    }
+
+
+    
+    .copyright  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+
+
+
+    /** Reviews **/
+
+    .reviews article div {
+      width:  43%;
+    }
+    
+    
+    
+
+
+    /* ==================================================================
+    ===================== ABOUT ==================================== */
+
+     .mission h2, .content-wrapper h2, .contact-section {
+      width: 95%;
+    }
+
+    footer  {
+   
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+    /* ==================================================================
+    ===================== FAQ ==================================== */
+    
+    .faq h2 {
+      width: 100%;
+    }
+
 }
 
 
