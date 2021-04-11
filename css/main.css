@@ -161,6 +161,10 @@ footer .social-icons p {
 
 }
 
+
+
+
+
 footer .contact  {
   margin-bottom: 50px;
 }
@@ -180,8 +184,12 @@ footer .copyright {
   margin: 20px 0;
 }
 
+
+
+
 .social h3 {
   margin:  0 0 45px 0;
+  
 }
 
 
@@ -559,7 +567,7 @@ aside {
     .contact-content {
         display: flex;
         justify-content:  space-between;
-        align-items:  flex-start;
+        align-items:  center;
       }
 
 
