@@ -87,6 +87,66 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+ 
+html {
+  font-size: 16px;
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+ 
+ul, 
+ol {
+  list-style: none;
+ 
+}
+ 
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+  
+}
+ 
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+ 
+p {
+  
+}
+ 
+img {
+ 
+}
+ 
+figure {
+ 
+}
+ 
+address {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.125em;
+ 
+}
+ 
+
+
+
+
+
+/*** Content wrapper ***/
+
+
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -555,20 +615,30 @@ aside {
         align-items: center;
     }
     
-    .mission-content p {
+    .contact-section .content-wrapper {
+      width: 80%;
+    }
 
-        width: 45%;
+
+    .mission-content p {
+        width: 42%;
+        margin: 0;
     }
- 
-    .contact-section .content-wrapper h2 {
-        width:  80%;
+
+
+    
+    .contact-content .info {
+      width: 35%;
     }
+    
  
     .contact-content {
         display: flex;
         justify-content:  space-between;
-        align-items:  center;
+        margin-right: 30px;
+       
       }
+
 
 
     /* ==========================================================================
@@ -581,23 +651,17 @@ aside {
     }
 
     .faq .content-wrapper {
-      
       justify-content: space-between;
-  
     }
   
 
     .faq-content  {
-
       flex-basis: 45%;
-
     }
 
     
     .faq h2 {
       width: 100%;
-
-
     }
   }  
 
