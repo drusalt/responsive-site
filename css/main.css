@@ -83,6 +83,33 @@ textarea {
   resize: vertical;
 }
 
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -114,17 +141,23 @@ a {
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
+  color: #e2e3ed;
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
+  font-weight: 500;
+  color: #e2e3ed;
+
 }
  
 p {
   font-size: 0.875em;
   line-height: 18pt;
+  color: #e2e3ed;
   
 }
  
@@ -140,9 +173,66 @@ address {
   font-style: normal;
  
 }
+
+header {
+  background-color: #202322;
+}
+
+footer {
+  background-color: #202322;
+}
+
+.reviews {
+  background-color: #2a423a;
+}
  
+.mission {
+  background-color: #527158;
+}
 
+.contact-section {
+  background-color: #2a423a;
+}
 
+.contact p,
+h2,
+h4 {
+  color: #e2e3ed;
+}
+
+.mission h2 {
+  font-size: 2.25em;
+  font-weight: 500;
+
+}
+
+.faq {
+  background-color: #527158;
+}
+
+.hero-area h1 {
+  font-size: 3.75em;
+  font-weight: 500;
+  color: #e2e3ed;
+}
+
+.reviews h3 {
+  font-weight: medium;
+  font-size: 1.875em;
+}
+
+.hero-area,
+aside,
+.features {
+  background-color: #696969;
+}
+
+.features-item-description {
+  color: #e1e2ea;
+  font-size: 0.875em;
+  line-height: 18pt;
+  text-align: center;
+}
 
 
 
@@ -592,7 +682,7 @@ aside {
     .footer-content {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      
     }
 
     footer .contact {
@@ -719,7 +809,7 @@ aside {
 
 
     footer {
-      width: 90%;
+      width: 100%;
     
     {
     
