@@ -162,10 +162,12 @@ p {
 }
  
 img {
- 
+    width: 100%;
 }
+
  
 figure {
+  margin: 0;
  
 }
  
@@ -214,6 +216,17 @@ h4 {
   font-size: 3.75em;
   font-weight: 500;
   color: #e2e3ed;
+  
+}
+
+.hero-area {
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.features {
+  background: url('../img/rawpixel-800820-unsplash2.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .reviews h3 {
@@ -221,17 +234,33 @@ h4 {
   font-size: 1.875em;
 }
 
-.hero-area,
-aside,
-.features {
-  background-color: #696969;
-}
+
 
 .features-item-description {
   color: #e1e2ea;
   font-size: 0.875em;
   line-height: 18pt;
   text-align: center;
+}
+
+aside {
+  background-color: #527158;
+}
+
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:  0;
 }
 
 
@@ -289,6 +318,7 @@ header nav ul {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  color: #FFFFFF;
 }
 
 header {
@@ -314,9 +344,6 @@ footer .social-icons p {
 }
 
 
-
-
-
 footer .contact  {
   margin-bottom: 50px;
 }
@@ -325,28 +352,35 @@ footer p {
   margin: 0;
 }
 
-
-
 footer .content-wrapper {
   width: 55%;
   margin:  50px 0;
+
 }
+
 
 footer .copyright {
   margin: 20px 0;
 }
 
 
-
-
 .social h3 {
   margin:  0 0 45px 0;
-  
 }
 
 
 
 /** -------------------- Mobile Styles Homepage ---------------------- **/
+
+/* Nav Area */
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
 
 /* Hero Area */
@@ -357,6 +391,10 @@ footer .copyright {
   flex-flow: row wrap;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+}
+
 /* Aside */
 
 aside {
@@ -364,7 +402,6 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
 
 }
 
@@ -411,7 +448,8 @@ aside {
 }
 
 .reviews h2 {
-  padding: 53px 0 33px 0;
+  margin-bottom: 40px;
+  line-height: 1;
 
 }
 
@@ -596,7 +634,29 @@ aside {
       margin: 100px 0;
     }
 
+    h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+    }
+
+    
+
     /* Header */
+
+    
+    header figure {
+    width: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 
 
     header {
@@ -622,10 +682,53 @@ aside {
       display: none;
     }
 
+    .hero-area {
+      min-height: 600px;
+    }
+
+
+
 
     
 
     /* Hero area */
+
+
+    .reviews div p {
+      font-size: 0.875em;
+      line-height: 18pt;
+
+    }
+
+    .reviews article {
+      display: flex;
+      justify-content: center;
+      
+    }
+
+
+
+    .reviews article figure,
+    .reviews article div {
+      width: 49%;
+    }
+
+    
+
+    .reviews h2 {
+      width: 85%;
+      font-size: 2.25em;
+    }
+
+    .reviews h3 {
+      font-size: 1.5em;
+      line-height: 30pt;
+      margin: 0px;
+      width: 75%;
+      padding: 0;
+      margin: 0;
+
+    }
 
     /* Aside */
 
@@ -774,8 +877,16 @@ aside {
     /*Hero Area*/
 
     .hero-area h1 {
-      width: 69%;
+      width: 60%;
     }
+
+    header figure {
+    width: 29%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
     /** Aside **/
 
@@ -803,7 +914,7 @@ aside {
     }
 
     .features article {
-      flex-basis: 30%;
+      flex-basis: 33%;
     }
 
 
@@ -824,14 +935,19 @@ aside {
       align-items: center;
     }
     
+    .reviews article div {
+      width:  43%;
+    }
 
+    .reviews div p {
+      font-size: 1.125em;
+      line-height: 24pt;
+    }
 
 
     /** Reviews **/
 
-    .reviews article div {
-      width:  43%;
-    }
+    
     
     
     
