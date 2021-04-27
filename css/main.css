@@ -151,6 +151,8 @@ h4 {
   font-size: 1.125em;
   font-weight: 500;
   color: #e2e3ed;
+  display: flex;
+  justify-content: center;
 
 }
  
@@ -158,6 +160,9 @@ p {
   font-size: 0.875em;
   line-height: 18pt;
   color: #e2e3ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
  
@@ -219,20 +224,18 @@ h4 {
   
 }
 
-.hero-area {
-  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat;
-  background-size: cover;
-}
 
 .features {
   background: url('../img/rawpixel-800820-unsplash2.jpg') center no-repeat;
   background-size: cover;
 }
 
-.reviews h3 {
+.reviews div h3 {
   font-weight: medium;
-  font-size: 1.875em;
+  font-size: 1.125em;
 }
+
+
 
 
 
@@ -270,6 +273,9 @@ aside {
 
 
 
+
+
+
 /*** Content wrapper ***/
 
 
@@ -280,7 +286,7 @@ aside {
 
 
 
-/*** Base Header - Footer Styles ***/
+/********************** Base Header - Footer Styles ************************/
 
 
 header, footer {
@@ -316,14 +322,14 @@ header nav ul {
   display: flex;
   justify-content: space-around;
 
-
 }
+
 
 .header-divider {
   width: 100%;
   height: 1px;
-  margin: 10px 0 20px 0;
-  color: #FFFFFF;
+  margin: 15px 0 10px 0;
+  background:  #3a3a3a;
 }
 
 header {
@@ -345,7 +351,15 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 
@@ -390,6 +404,12 @@ header figure {
 
 /* Hero Area */
 
+.hero-area {
+  background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat;
+  background-size: cover; min-height: 500px;
+}
+
+
 .hero-area  {
   display: flex;
   justify-content: center;
@@ -398,6 +418,11 @@ header figure {
 
 .hero-area h1 {
   font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif; 
+  font-weight: 500; 
+  line-height: 1.2; 
+
+
 }
 
 /* Aside */
@@ -408,6 +433,10 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 
+}
+
+aside h3 {
+  justify-content: flex-start;
 }
 
 
@@ -463,9 +492,6 @@ aside {
   padding: 21px 0 26px 0;
 }
 
-.reviews p {
-  padding-bottom: 47px;
-}
 
 
 
@@ -634,9 +660,10 @@ aside {
 
 
     /* General Styles */
+
     .content-wrapper {
       max-width: 640px;
-      margin: 100px 0;
+      
     }
 
     h2 {
@@ -660,7 +687,7 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-}
+    }
 
 
 
@@ -701,7 +728,7 @@ aside {
 
     .reviews div p {
       font-size: 0.875em;
-      line-height: 18pt;
+      line-height: 14pt;
 
     }
 
@@ -725,7 +752,7 @@ aside {
       font-size: 2.25em;
     }
 
-    .reviews h3 {
+    .reviews div h3 {
       font-size: 1.5em;
       line-height: 30pt;
       margin: 0px;
@@ -882,7 +909,12 @@ aside {
     /*Hero Area*/
 
     .hero-area h1 {
-      width: 60%;
+      width: 80%;
+      font-size: 3.75em;
+    }
+
+    .hero-area {
+      min-height: 850px;
     }
 
     header figure {
@@ -891,12 +923,15 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-}
+    }
 
     /** Aside **/
 
+
+
     aside .content-wrapper {
       justify-content: space-around;
+
     }
     
     aside .content-wrapper .form-description,
@@ -914,7 +949,7 @@ aside {
 
     .features .features-items {
       justify-content: space-around;
-      width: 85%;
+      
      
     }
 
@@ -927,7 +962,6 @@ aside {
     footer {
       width: 100%;
     
-    {
     
 
     }
@@ -946,7 +980,7 @@ aside {
 
     .reviews div p {
       font-size: 1.125em;
-      line-height: 24pt;
+      line-height: 20pt;
     }
 
 
