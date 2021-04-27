@@ -453,6 +453,8 @@ aside h3 {
 
 .features p {
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .features h2 {
@@ -517,8 +519,13 @@ aside h3 {
   align-items: center;
   flex-flow: row wrap;
   margin: 50px 0 0 0;
-
 }
+
+.faq h3 {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .faq h2 {
   margin-bottom: 40px;
 }
